@@ -4,6 +4,15 @@ body {
   background: #fff;
   color: #222;
 }
+.logo-wrap {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-wrap img {
+  max-width: 120px;
+  height: auto;
+}
 
 .container {
   max-width: 720px;
