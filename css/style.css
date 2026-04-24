@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: "Hoefler Text", serif;
+  background: #fff;
+  color: #222;
+}
+
+.container {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 0 20px;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+.tagline {
+  color: #508842;
+  letter-spacing: 0.05em;
+}
+
+.notice {
+  border-left: 2px solid #e5c357;
+  padding-left: 12px;
+  margin: 20px 0;
+}
+
+a {
+  color: #3666c0;
+  text-decoration: none;
+  border-bottom: 1px solid #e5c357;
+}
+
+a:hover {
+  color: #e5c357;
+}
+
+.site-footer {
+  max-width: 720px;
+  margin: 80px auto 40px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 20px;
+}
