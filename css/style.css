@@ -4,19 +4,20 @@ body {
   background: #fff;
   color: #222;
 }
+
 .logo-wrap {
-  text-align: center;
-  margin-bottom: 20px;
+  flex: 0 0 auto;
 }
 
 .logo-wrap img {
-  max-width: 120px;
+  display: block;
+  max-width: 140px;
   height: auto;
 }
 
 .container {
   max-width: 720px;
-  margin: 80px auto;
+  margin: 56px auto;
   padding: 0 20px;
   line-height: 1.65;
 }
@@ -25,9 +26,31 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-copy {
+  min-width: 0;
+}
+
+.header-copy h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+}
+
 .tagline {
+  margin: 8px 0 0;
   color: #508842;
   letter-spacing: 0.05em;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .notice {
@@ -48,9 +71,24 @@ a:hover {
 
 .site-footer {
   max-width: 720px;
-  margin: 80px auto 40px;
+  margin: 56px auto 40px;
   padding: 20px;
   border-top: 1px solid #eee;
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin-top: 24px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-wrap img {
+    max-width: 116px;
+  }
 }
