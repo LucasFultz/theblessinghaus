@@ -108,6 +108,20 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+.clinician-intro {
+  display: flow-root;
+}
+
+.clinician-photo {
+  float: right;
+  width: clamp(150px, 28vw, 230px);
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 16px 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
 .notice {
   border-left: 2px solid #e5c357;
   padding-left: 12px;
@@ -151,5 +165,10 @@ a:hover {
 
   .logo-wrap img {
     max-width: 116px;
+  }
+
+  .clinician-photo {
+    width: clamp(120px, 36vw, 180px);
+    margin-left: 16px;
   }
 }
