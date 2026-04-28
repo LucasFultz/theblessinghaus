@@ -110,14 +110,15 @@ h1, h2, h3 {
 
 .clinician-intro {
   display: flow-root;
+  margin-bottom: 28px;
 }
 
 .clinician-photo {
   float: left;
-  width: clamp(150px, 28vw, 230px);
+  width: clamp(140px, 24vw, 200px);
   max-width: 100%;
   height: auto;
-  margin: 0 24px 16px 0;
+  margin: 0 20px 14px 0;
   border-radius: 18px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
@@ -168,7 +169,12 @@ a:hover {
   }
 
   .clinician-photo {
-    width: clamp(120px, 36vw, 180px);
-    margin-right: 16px;
+    width: clamp(120px, 34vw, 150px);
+    margin-right: 14px;
+    margin-bottom: 12px;
+  }
+
+  .clinician-intro {
+    margin-bottom: 24px;
   }
 }
