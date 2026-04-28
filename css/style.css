@@ -24,16 +24,20 @@ body {
 
 .content-layout {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: 40px;
+  grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
+  gap: 32px;
   align-items: start;
+  width: 100%;
 }
 
 .site-nav {
-  width: 190px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: sticky;
+  top: 24px;
+  align-self: start;
 }
 
 .nav-link {
@@ -126,12 +130,12 @@ a:hover {
   }
 
   .content-layout {
-    grid-template-columns: 140px minmax(0, 1fr);
+    grid-template-columns: minmax(120px, 140px) minmax(0, 1fr);
     gap: 20px;
   }
 
   .site-nav {
-    width: 140px;
+    width: 100%;
   }
 
   .nav-link {
@@ -140,9 +144,9 @@ a:hover {
   }
 
   .site-header {
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .logo-wrap img {
