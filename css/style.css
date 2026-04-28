@@ -23,19 +23,17 @@ body {
 }
 
 .content-layout {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
   gap: 40px;
+  align-items: start;
 }
 
 .site-nav {
-  width: 220px;
-  position: sticky;
-  top: 24px;
+  width: 190px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  flex: 0 0 auto;
 }
 
 .nav-link {
@@ -46,7 +44,7 @@ body {
   background: #fafafa;
   color: #333;
   text-decoration: none;
-  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
 .nav-link:hover {
@@ -66,7 +64,6 @@ body {
 }
 
 .page-content {
-  flex: 1;
   min-width: 0;
 }
 
@@ -129,11 +126,12 @@ a:hover {
   }
 
   .content-layout {
+    grid-template-columns: 140px minmax(0, 1fr);
     gap: 20px;
   }
 
   .site-nav {
-    width: 160px;
+    width: 140px;
   }
 
   .nav-link {
