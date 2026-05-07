@@ -135,6 +135,52 @@ h1, h2, h3 {
   margin: 20px 0 0;
 }
 
+.faq-list {
+  margin-top: 24px;
+}
+
+.faq-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: #fafafa;
+  padding: 0 16px;
+}
+
+.faq-item + .faq-item {
+  margin-top: 14px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 28px 14px 0;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #508842;
+  font-size: 1.2rem;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-item p {
+  margin: 0 0 16px;
+  color: #444;
+}
+
 a {
   color: #3666c0;
   text-decoration: none;
@@ -211,6 +257,15 @@ a:hover {
 
   .clinician-photo {
     width: clamp(120px, 34vw, 150px);
+  }
+
+  .faq-item {
+    padding: 0 14px;
+  }
+
+  .faq-item summary {
+    padding: 12px 24px 12px 0;
+    font-size: 1rem;
   }
 
   .site-footer {
