@@ -153,9 +153,11 @@ h1, h2, h3 {
 .faq-item summary {
   cursor: pointer;
   list-style: none;
-  padding: 14px 28px 14px 0;
+  padding: 16px 28px 16px 0;
   position: relative;
-  font-size: 1.05rem;
+  font-size: 1.17em;
+  line-height: 1.4;
+  color: #222;
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -178,6 +180,8 @@ h1, h2, h3 {
 
 .faq-item p {
   margin: 0 0 16px;
+  font-size: 1rem;
+  line-height: 1.65;
   color: #444;
 }
 
@@ -264,7 +268,11 @@ a:hover {
   }
 
   .faq-item summary {
-    padding: 12px 24px 12px 0;
+    padding: 14px 24px 14px 0;
+    font-size: 1.08em;
+  }
+
+  .faq-item p {
     font-size: 1rem;
   }
 
